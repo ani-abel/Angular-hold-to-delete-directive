@@ -1,0 +1,9 @@
+<h3>Using 'draggable' Library from '@shoppify/draggable'</h3>
+<ul sortable [data]="docs" (stop)="updateFirestore($event)">
+  <li *ngFor="let doc of docs; let i = index">
+    {{ doc | uppercase }}<br>
+    <span (click)="removeItem(i)" class="ribbon">Delete</span>
+  </li>
+</ul>
+
+<button class="add-item-btn" (click)="addItem()">Add Item</button>

@@ -1,0 +1,45 @@
+.draggable-container--is-dragging {
+    border: 5px blue solid;
+}
+
+.draggable-source--is-dragging {
+    transform: scale(0.8);
+    background: lightgray;
+}
+
+.draggable-source--placed {
+    background: green;
+    transform: scale(1);
+    transition: transform 700ms ease-in;
+}
+
+.draggable-mirror {
+    background: gray;
+    display: block;
+}
+
+ul {
+    width: 60% !important;
+}
+
+li {
+    list-style: none;
+    border: 2px solid #ddd;
+    padding: 10px 12px;
+    background: whitesmoke;
+}
+
+.ribbon {
+    background: indianred !important;
+    padding: 8px 10px;
+    margin-top: 10px;
+    display: block;
+    color: #fff;
+}
+
+.add-item-btn {
+    background: teal;
+    border:none;
+    padding: 8px 10px;
+    color: #fff;
+}

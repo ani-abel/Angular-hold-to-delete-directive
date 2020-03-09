@@ -1,0 +1,7 @@
+<h4>Hold to delete Directive</h4>
+<button type="button" (click)="addPayload()">Click To Add Payload</button>
+
+<!-- app-customer -->
+<app-customer *ngFor="let customer of customers" 
+        [customer]="customer"
+        [customers]="customers"></app-customer>
